@@ -10,7 +10,7 @@ namespace TestConsoleApp
     {
         public Dictionary<string, string> Attributes { get; set; } = new();
 
-        public void ConvertJsonToDictionary()
+        public async Task ConvertJsonToDictionary()
         {
             var json = @"{
                   ""attributes"": {
@@ -26,6 +26,7 @@ namespace TestConsoleApp
                   }
                 }";
 
+            await Task.Delay(10);
 
 
             using var doc = JsonDocument.Parse(json);
@@ -38,5 +39,13 @@ namespace TestConsoleApp
 
             Console.Write(list["Engagement Leader Email"]);
         }
+
+        public void WriteOutput()
+        {
+            string read = "Hello";
+
+        }
+
+        
     }
 }
