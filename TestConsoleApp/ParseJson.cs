@@ -37,7 +37,6 @@ namespace TestConsoleApp
 
 
             Console.Write(list["Engagement Leader Email"]);
-            Console.WriteLine("Completed");
         }
     }
 }
