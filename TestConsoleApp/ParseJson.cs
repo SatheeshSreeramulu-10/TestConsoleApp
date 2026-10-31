@@ -43,6 +43,8 @@ namespace TestConsoleApp
         public void WriteOutput()
         {
             string read = "Hello";
+            string clientSecret = "efw1234455==";
+            Console.WriteLine(clientSecret);
 
         }
 
